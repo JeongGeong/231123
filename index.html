@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+               
+            }
+        }
+
+        @keyframes drawDash {
+           
+            to {
+                stroke-dashoffset:0;
+            }
+        }
+
+        svg {
+            overflow: visible;
+        }
+        path {
+            stroke-dasharray:300;
+            stroke-dashoffset:300;
+            animation: draw 2s forwards infinite;
+        }
+
+        circle {
+            stroke-dashoffset:200;
+            stroke-width: 2;
+            stroke-dasharray: 5 5;
+            animation: drawDash 4s forwards infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="http://www.naver.com" target="_blank">
+    <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M80.5 46C80.5 62.2635 80.5 70.3952 75.4476 75.4476C70.3952 80.5 62.2635 80.5 46 80.5C29.7365 80.5 21.6048 80.5 16.5524 75.4476C11.5 70.3952 11.5 62.2635 11.5 46C11.5 29.7365 11.5 21.6048 16.5524 16.5524C21.6048 11.5 29.7365 11.5 46 11.5" stroke="url(#paint0_linear_9_2)" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="69.9583" cy="22.0417" r="10.5417" stroke="url(#paint1_linear_9_2)" stroke-width="5.75" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+        <linearGradient id="paint0_linear_9_2" x1="46" y1="11.5" x2="46" y2="80.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F37F7F"/>
+        <stop offset="1" stop-color="#95FEFE"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_9_2" x1="69.9583" y1="11.5" x2="69.9583" y2="32.5833" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F37F7F"/>
+        <stop offset="1" stop-color="#95FEFE"/>
+        </linearGradient>
+        </defs>
+        </svg>
+    </a>
+        
+        
+</body>
+</html>
